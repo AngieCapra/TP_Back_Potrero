@@ -1,0 +1,89 @@
+
+
+
+body {
+width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+  font-family: monospace;
+}
+/*.imangen_banner img{
+width: 110rem;
+
+
+
+}*/
+
+.imagen_banner {
+  
+  
+  position: relative;
+  
+  /* Reemplaza 'tu_imagen_de_fondo.jpg' con la ruta correcta de tu imagen */
+ /* background-size: cover;*/
+  height: 100vh;
+  /* Ajusta según sea necesario */
+}
+
+.login-container {
+  /*border-style:solid;
+  border-color: rgb(177, 79, 30);
+  border-radius: 1cm;*/
+  width: 20rem;
+  height: 18rem;
+  
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color:rgb(53, 50, 50);
+  box-shadow: 0px 0px 10px rgba(1, 1, 0, 0.4);
+    /* Ajusta los valores según sea necesario */
+}
+
+img{
+  width: 100%;
+}
+/*.login-container {
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  position:relative;
+}*/
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 4rem 2rem;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 16px;
+  background-color: rgb(237, 241, 241);
+  border:none;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #e0e6e0;
+  color: rgb(53, 50, 50);
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f87c29;
+}
