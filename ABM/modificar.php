@@ -34,7 +34,7 @@ $talle=$datos["talle"];
 $precio=$datos["precio"];
 $imagen=$datos["imagen"];
 ?>
-<h2>Modificar</h2>
+<h1>Modificar</h1>
 <p>Ingrese los nuevos datos del artículo <i class="bi bi-arrow-right-square"></i></p>
 
 <form action="" method="post" enctype="multipart/form-data">

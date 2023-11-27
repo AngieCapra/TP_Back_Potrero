@@ -20,9 +20,11 @@ $datos = mysqli_fetch_array($respuesta);
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="Style/header.css">
   <link rel="stylesheet" type="text/css" href="Style/index.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Style/footer.css">
   <title>Productos</title>
 
 <body>
@@ -34,16 +36,17 @@ $datos = mysqli_fetch_array($respuesta);
 
     <div class="card_index">
       <div class="card">
-        <img class="card-img-top" src="data:image/jpg;base64, <?php echo base64_encode($datos['imagen']) ?>" alt="..."
-          width="100px" height="170px" )>
+       
         <div class="card-body">
+           <img class="card-img-top" src="data:image/jpg;base64, <?php echo base64_encode($datos['imagen']) ?>" alt="..."
+            width="100px" height="220px" )>
 
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.
-          </p>
+           <h5 class="card-title">
+            <?php echo ucwords($datos['caracteristicas']) ?>
+          </h5>
 
-          <a href="https://mpago.la/335z4TD" target="_blank"><button class="btn btn-primary"
-              type="submit">Comprar</button></a>
+          <a href="https://mpago.la/335z4TD" target="_blank" class="btn btn_mio"
+              type="submit">Comprar</a>
 
 
         </div>
