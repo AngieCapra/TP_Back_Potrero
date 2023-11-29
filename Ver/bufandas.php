@@ -22,23 +22,17 @@
   <div class="card_index">
     <?php
 
-    // 1) Conexion
-    $conexion = mysqli_connect("127.0.0.1", "root", "");
-    mysqli_select_db($conexion, "tu_ropa");
 
-    // 2) Preparar la orden SQL
-    // Sintaxis SQL SELECT
-    // SELECT * FROM nombre_tabla
-    // => Selecciona todos los campos de la siguiente tabla
-    // SELECT campos_tabla FROM nombre_tabla
-    // => Selecciona los siguientes campos de la siguiente tabla
+    $conexion = mysqli_connect("localhost", "id21594069_angiecapra", "Palermo9???");
+    mysqli_select_db($conexion, "id21594069_tu_ropa");
+
+
     $consulta = 'SELECT * FROM tu_ropa WHERE categoria="bufanda"';
 
 
-    // 3) Ejecutar la orden y obtenemos los registros
     $datos = mysqli_query($conexion, $consulta);
 
-    // 4) el while recorre todos los registros y genera una CARD PARA CADA UNA
+
     while ($reg = mysqli_fetch_array($datos)) {
       $id = $reg['id'];
       ?>

@@ -82,3 +82,11 @@ a.split:hover{
 button{
   background-color: #48AAA4 !important;
 }
+
+@media (max-width: 400px){
+.toolbar ,.navbar,.nav, .envios{
+  width: 490px; 
+}
+
+
+}

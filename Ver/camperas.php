@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bufandas</title>
+  <title>Camperas</title>
   <link rel="stylesheet" type="text/css" href="../Style/header.css">
   <link rel="stylesheet" type="text/css" href="../Style/ver.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -15,27 +15,21 @@
 
 <body>
   <?php
-  include ('../header.php');
+  include('../header.php');
   ?>
   <div class="card_index">
     <?php
-    // 1) Conexion
-    $conexion = mysqli_connect("127.0.0.1", "root", "");
-    mysqli_select_db($conexion, "tu_ropa");
 
-    // 2) Preparar la orden SQL
-    // Sintaxis SQL SELECT
-    // SELECT * FROM nombre_tabla
-    // => Selecciona todos los campos de la siguiente tabla
-    // SELECT campos_tabla FROM nombre_tabla
-    // => Selecciona los siguientes campos de la siguiente tabla
+    $conexion = mysqli_connect("localhost", "id21594069_angiecapra", "Palermo9???");
+    mysqli_select_db($conexion, "id21594069_tu_ropa");
+
     $consulta = 'SELECT * FROM tu_ropa WHERE categoria="campera"';
 
 
-    // 3) Ejecutar la orden y obtenemos los registros
+
     $datos = mysqli_query($conexion, $consulta);
 
-    // 4) el while recorre todos los registros y genera una CARD PARA CADA UNA
+
     while ($reg = mysqli_fetch_array($datos)) {
       $id = $reg['id'];
       ?>

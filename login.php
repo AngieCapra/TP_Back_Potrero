@@ -11,7 +11,7 @@ $ckcontrasenia = 1234;
 if ($usuario==$ckusuario && $contrasenia==$ckcontrasenia){
   header('Location:ABM/amb.php');
 }else{
-  echo "Incorrecto";
+
   header ('Location:error_404.html');
 }
 ?>

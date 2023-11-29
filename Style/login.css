@@ -10,12 +10,6 @@ width: 100%;
   
   font-family: monospace;
 }
-/*.imangen_banner img{
-width: 110rem;
-
-
-
-}*/
 
 .imagen_banner {
   
@@ -29,9 +23,7 @@ width: 110rem;
 }
 
 .login-container {
-  /*border-style:solid;
-  border-color: rgb(177, 79, 30);
-  border-radius: 1cm;*/
+  
   width: 20rem;
   height: 18rem;
   
@@ -48,13 +40,7 @@ width: 110rem;
 img{
   width: 100%;
 }
-/*.login-container {
-  text-align: center;
-  border: 1px solid #ccc;
-  padding: 20px;
-  border-radius: 8px;
-  position:relative;
-}*/
+
 
 form {
   display: flex;
@@ -87,3 +73,20 @@ button {
 button:hover {
   background-color: #f87c29;
 }
+
+@media (max-width: 400px){
+  body{ 
+  background-color:#E9A193 ;  
+  }
+ img{
+  display: none;
+ }
+
+ .login-container{
+  align-self: center;
+ top:10%;
+ left:40%;
+ position: relative;
+ } 
+}
+ 

@@ -66,10 +66,11 @@ a.btn_mio:hover {
 }
 
 form{
-  background-color:#485B79; 
+  background-color:#8ab4f8; 
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2rem;
  
 }
 input{

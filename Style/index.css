@@ -49,4 +49,17 @@ a.btn_mio:hover{
   
 }
 
+@media (max-width: 400px){
+  html{
+    width: 490px;
+    height:min-content;
+  }
+.card_index{
+  justify-content: center;
+  flex-wrap: wrap;
+  margin:0 20% ;
+  
+}
+}
+
 
