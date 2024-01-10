@@ -75,6 +75,10 @@ if (isset($_SESSION['usuario'])) {
 
       </div>
     <?php } ?>
+
+    <div class="volver">
+      <a href="../index.php" class="btn btn_mio" type="submit">Volver</a>
+    </div>
   </div>
 
 
